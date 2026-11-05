@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cherrychive</title>
+
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Cherry Archive</h2>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to the Cherry Archive</h1>
+
+        <p>
+            Where our cherries are stored
+            <br>
+            <small>Adorable looking cherries!</small>
+        </p>
+
+        <button onclick="showAbout()">Explore Our Cherries</button>
+    </section>
+
+    <section id="about" style="display: none;">
+        <h1>About Our Cherries</h1>
+
+        <h2><i>This is our Boys!</i></h2>
+
+        <p>We have <b>Reginaldo, Steve Zodjee S.</b>
+	<ul>
+	<li><b>Birthdate:</b> June 14, 2009</li>
+	<li><b>Age:</b> 17 years old</li>
+	</ul>	
+	</p>
+        <img src="IMG/STEVEE.jpg" alt="steve reginaldo" width="300" height="300">
+
+        <p>Next is <b>Varona, John Lenard</b>
+	<ul>
+	<li> <b>Birthdate:</b> October 3, 2008</li>
+	<li> <b>Age:</b> 18 years old</li>
+	</ul>
+	</p>
+        <img src="IMG/VAR.jpg" alt="John Varona" width="300" height="300">
+
+        <h2><i>Now we have our Girls!</i></h2>
+
+        <p>Our dearest, <b>Beltran, Aiesha Ayla U.</b>
+	<ul>
+	<li><b>Birthdate:</b> January 2, 2009</li>
+	<li><b>Age:</b> 17 years old</li>
+	</ul>
+	</p>
+        <img src="IMG/AIES.jpg" alt="Aiesha Beltran" width="300" height="300">
+
+        <p>And the other twin? <b>Beltran, Jannel L.</b>
+	<ul>
+	<li><b>Birthdate:</b> January 23, 2009</li>
+	<li><b>Age:</b> 17 years old</li>
+	</ul>
+	</p>
+        <img src="IMG/JAN.jpg" alt="Jannel Beltran" width="300" height="300">
+	
+        <p>Of course, we have <b>Blasco, Jessica D.</b>
+	<ul>
+	<li><b>Birthdate:</b> January 29, 2009</li>
+	<li><b>Age:</b> 17 years old</li>
+	</ul>
+	</p>
+        <img src="IMG/JES.jpg" alt="Jessica Blasco" width="300" height="300">
+
+        <p>The adorable looking <b>Cao, Krissa Mae R.</b>
+	<ul>
+	<li><b>Birthdate:</b> June 18, 2009</li>
+	<li><b>Age:</b> 17 years old</li>
+	</ul>
+	</p>
+        <img src="IMG/CAOO.jpg" alt="Krissa Cae" width="300" height="300">
+
+        <p>
+            Our lady over here will not lose out!
+            <b>Dela Torre, Anicia Nicole A.</b>
+	<ul>
+	<li><b>Birthdate:</b> July 7, 2009</li>
+	<li><b>Age:</b> 17 years old</li>
+	</ul>
+        </p>
+        <img src="IMG/ANI.jpg" alt="Anicia Dela Torre" width="300" height="300">
+
+        <p>And the last cherry is... <b>Rosero, Sarah P.</b>
+	<ul>
+	<li><b>Birthdate:</b> October 5, 2009</li>
+	<li><B>Age:</b> 17 years old</li>
+	</ul>
+	</p>
+        <img src="IMG/SAR.jpg" alt="Sarah Rosero" width="300" height="300">
+
+        <button onclick="gohome()">Home</button>
+    </section>
+
+    <footer>
+
+        <p>Made with hardwork.</p>
+    </footer>
+
+    <script>
+        function showAbout() {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'block';
+        }
+
+        function gohome() {
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('home').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

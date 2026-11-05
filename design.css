@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Redaction+20:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #fff0f3, #ffc2d1, #ff8fa3);
+    color: #800f2f;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    min-height: 100vh;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #590d22, #800f2f, #a4133c);
+    color: white;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(89, 13, 34, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h2 {
+    font-family: 'Redaction', serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+/* Home Section */
+#home {
+    max-width: 850px;
+    margin: 100px auto;
+    padding: 60px 30px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(128, 15, 47, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+/* About Section */
+#about {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 50px 30px;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(128, 15, 47, 0.15);
+}
+
+/* Headings */
+h1 {
+    color: #800f2f;
+    font-family: 'Redaction', serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #a4133c;
+    margin: 25px 0 15px;
+}
+
+/* Paragraphs */
+p {
+    color: #590d22;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+small {
+    color: #a4133c;
+    font-size: 14px;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(to right, #a4133c, #c9184a);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    box-shadow: 0 5px 15px rgba(164, 19, 60, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #590d22, #800f2f);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(89, 13, 34, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Cherry Images */
+#about img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 5px solid white;
+    margin: 15px auto 30px;
+    box-shadow: 0 8px 20px rgba(128, 15, 47, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#about img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    margin-top: 80px;
+    padding: 30px 20px;
+    background: #590d22;
+    color: white;
+    box-shadow: 0 -5px 15px rgba(89, 13, 34, 0.2);
+}
+
+
+footer p {
+    color: #fff0f3;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #home,
+    #about {
+        margin: 40px 15px;
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    #about img {
+        width: 200px;
+        height: 200px;
+    }
+
+    footer img {
+        height: 150px;
+    }
+}
